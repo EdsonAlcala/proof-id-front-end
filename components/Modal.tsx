@@ -1,10 +1,11 @@
 import { Dialog, Transition } from "@headlessui/react"
 import { Fragment } from "react"
-import asset_hsbc from "@/assets/hsbc.jpg"
+// import asset_hsbc from "@/assets/hsbc.jpg"
 import Image from "next/image"
 import Button from "../components/Button"
+import housing_asset from "@/assets/housing-anywhere.png"
 
-const noOp = () => {}
+const noOp = () => { }
 function Modal({ isOpen = false, onClose = noOp }) {
   return (
     <Transition appear show={isOpen} as={Fragment}>
@@ -46,20 +47,20 @@ function Modal({ isOpen = false, onClose = noOp }) {
 function MockedModal({ onClose }: { onClose: any }) {
   return (
     <div className="flex flex-col items-center w-full max-w-2xl mx-auto p-4">
-      <div className="w-16 h-16">
+      <div className="w-32 h-20">
         <Image
           alt=""
-          className="w-16 h-16"
-          src={asset_hsbc}
+          className="w-32 h-20"
+          src={housing_asset}
           layout="responsive"
         />
       </div>
       <h2 className="text-center font-bold text-lg">
-        HSBC Salary Review Request
+        Salary Proof Review Request
       </h2>
       <div className="flex flex-col space-y-2 my-4">
         <p className="text-center">
-          HSBC is requesting to access the proof that your salary is more than
+          Housing Anywhere is requesting to access the proof that your salary is more than
           $50k annually.
         </p>
         <p className="text-center">
