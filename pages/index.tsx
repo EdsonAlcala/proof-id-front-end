@@ -7,10 +7,10 @@ import Link from "next/link"
 const Profile: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col w-full max-w-2xl mx-auto p-4 items-center justify-center">
-      <div className="w-32 h-20">
+      <div className="w-32 h-32">
         <Image
           alt=""
-          className="w-32 h-20"
+          className="w-32 h-32"
           src={asset_logo}
           layout="responsive"
         />
